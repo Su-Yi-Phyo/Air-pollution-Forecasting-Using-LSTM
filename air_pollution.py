@@ -13,8 +13,8 @@ with st.sidebar:
     st.number_input('Rain:')
     st.number_input('Snow:')
     st.number_input('Dew:')
-    st.number_input('Wind Direction:')
-    st.text_input('Pressure:')
+    st.number_input('Pressure:')
+    st.text_input('Wind Direction:')
     st.markdown('This is last sentence')
     st.write('Output:')
 
