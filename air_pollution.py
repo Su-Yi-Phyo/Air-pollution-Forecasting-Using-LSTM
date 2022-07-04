@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import joblib
 
-model =  joblib.load('AirPollutionModel.h5')
+# model =  joblib.load('AirPollutionModel.h5')
 
 #Sidebar
 with st.sidebar:
