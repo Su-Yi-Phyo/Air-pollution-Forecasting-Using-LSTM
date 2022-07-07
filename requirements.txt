@@ -2,4 +2,4 @@ streamlit
 numpy
 joblib
 pandas
-streamlit option_menu
+
