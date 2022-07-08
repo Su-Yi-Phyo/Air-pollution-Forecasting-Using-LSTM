@@ -106,7 +106,7 @@ elif selected == "Test":
 #           st.bokeh_chart(p, use_container_width=True)
 
 elif selected == "Contact":
-st.markdown("""
+  st.markdown("""
      <h1 style="color: #0F2080; text-align: center;"> Meet Our Team </h1>
   """,unsafe_allow_html = True)
 
@@ -124,8 +124,8 @@ st.markdown("""
         </button>
         </a>
   """, unsafe_allow_html = True)
-  st.markdown("""""", unsafe_allow_html = True)
 
+  st.markdown("""""", unsafe_allow_html = True)
   st.image("SYP.jpg", width = 500)
   st.markdown("""
      <div class="container">
