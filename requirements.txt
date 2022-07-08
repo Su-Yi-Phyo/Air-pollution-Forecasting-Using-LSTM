@@ -7,4 +7,4 @@ scikit-learn
 streamlit_option_menu
 keras.models
 tensorflow
-
+altair
