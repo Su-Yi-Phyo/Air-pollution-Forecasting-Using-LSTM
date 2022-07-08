@@ -84,22 +84,22 @@ elif selected == "Test":
           result=result*std_op + mean_op
 
           #graph output
-#           st.line_chart(result, colums=['Air Pollution Prediction'])
-          from bokeh.plotting import figure
+          st.line_chart(result, colums=['Air Pollution Prediction'])
+#           from bokeh.plotting import figure
 
-          x = []
-          y = result
-          for i in range(0,len(result)):
-            x.append[i]
+#           x = []
+#           y = result
+#           for i in range(0,len(result)):
+#             x.append[i]
 
-          p = figure(
-               title='simple line example',
-               x_axis_label='x',
-               y_axis_label='y')
+#           p = figure(
+#                title='simple line example',
+#                x_axis_label='x',
+#                y_axis_label='y')
 
-          p.line(x, y, legend_label='Trend', line_width=2)
+#           p.line(x, y, legend_label='Trend', line_width=2)
 
-          st.bokeh_chart(p, use_container_width=True)
+#           st.bokeh_chart(p, use_container_width=True)
 
 elif selected == "Contact":
   st.markdown("""
