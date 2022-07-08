@@ -2,6 +2,8 @@ import streamlit as st
 import altair as alt
 import pandas as pd
 import numpy as np
+import plotly.express as px
+import plotly.graph_objects as go
 
 from matplotlib import pyplot as plt
 from keras.models import load_model
@@ -84,13 +86,14 @@ elif selected == "Test":
           result=result*std_op + mean_op
 
           #graph output
-          plt.figure(figsize=(18,5.5))
-          plt.ylabel("ppm")
-          plt.xlabel("hrs")
-          plt.plot(result, c = "darkblue", alpha = 0.75,label='Prediction Data')
-          plt.legend()
-          plt.title("Testing data")
-          plt.show()
+          fig = px.line(        
+          result, #Data Frame
+          x = "Time", #Columns from the data frame
+          y = "ppm",
+          title = "Air Pollution Rate")
+          fig.update_traces(line_color = "darkblue")
+          st.plotly_chart(fig)
+
           
 elif selected == "Contact":
   st.markdown("""
