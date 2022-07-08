@@ -86,9 +86,6 @@ elif selected == "Test":
           def plot_all_downloads(
           source, x="date", y="downloads", group="project", axis_scale="linear"):
 
-          if st.checkbox("View logarithmic scale"):
-              axis_scale = "log"
-
           brush = alt.selection_interval(encodings=["x"], empty="all")
 
           click = alt.selection_multi(encodings=["color"])
@@ -128,9 +125,9 @@ elif selected == "Test":
               .add_selection(click)
           )
 
-        return lines & bars
+            return lines & bars
         
-        st.altair_chart(plot_all_downloads(result), use_container_width=True)
+            st.altair_chart(plot_all_downloads(result), use_container_width=True)
 
 elif selected == "Contact":
   st.markdown("""
