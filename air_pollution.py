@@ -83,7 +83,7 @@ elif selected == "Test":
           result=result*std_op + mean_op
 
           #graph output
-          st.line_chart(chart_data)
+          st.line_chart(result)
           
 elif selected == "Contact":
   st.markdown("""
