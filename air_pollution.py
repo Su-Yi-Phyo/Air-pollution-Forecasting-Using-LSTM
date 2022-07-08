@@ -75,7 +75,7 @@ elif selected == "Test":
           result=model.predict(test_x)
           result=result.ravel()
 
-          poll=np.array(df['pollution'])
+          poll=np.array(csv_file['pollution'])
           mean_op=poll.mean()
           std_op=poll.std()
           print(mean_op,std_op)
