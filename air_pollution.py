@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import altair as alt
 
 from matplotlib import pyplot as plt
 from keras.models import load_model
