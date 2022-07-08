@@ -84,10 +84,8 @@ elif selected == "Test":
           result=result*std_op + mean_op
 
           #graph output
-          chart_data = pd.DataFrame(
-          result,
-          colums=['Air Pollution Prediction'])
-          st.line_chart(chart_data)
+#           chart_data = pd.DataFrame(result,colums=['Air Pollution Prediction'])
+          st.line_chart(result)
 #           from bokeh.plotting import figure
 
 #           x = []
