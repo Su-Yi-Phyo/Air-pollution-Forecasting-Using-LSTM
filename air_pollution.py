@@ -58,16 +58,16 @@ elif selected == "Test":
 
           csv_file["wind_dir"] = csv_file["wnd_dir"].apply(func)
           del csv_file["wnd_dir"]
-          csv_file
+          
+          #scaling
+          dataset = csv_file
+          values = dataset.values
 
-#           #scaling
-#           dataset = csv_file
-#           values = dataset.values
+          values = values.astype('float32')
 
-#           values = values.astype('float32')
-
-#           scaler = MinMaxScaler(feature_range=(0, 1))
-#           scaled = scaler.fit_transform(values)
+          scaler = MinMaxScaler(feature_range=(0, 1))
+          scaled = scaler.fit_transform(values)
+          scaled
 
 #           test_x = scaled
 #           test_x = test_x.reshape((test_x.shape[0], 1, test_x.shape[1]))
