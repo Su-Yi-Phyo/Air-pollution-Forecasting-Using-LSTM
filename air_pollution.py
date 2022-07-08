@@ -8,13 +8,12 @@ from keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
 from streamlit_option_menu import option_menu
 
-
-model = load_model('AirPollutionModel.h5')
-
 st.set_page_config(
      page_title="Air Pollution Forecasting App",
      page_icon="https://github.com/Su-Yi-Phyo/Air-pollution-Forecasting-Using-LSTM/blob/main/pollution.png",
      layout="wide")
+
+model = load_model('AirPollutionModel.h5')
 
 with st.sidebar:
   selected = option_menu(None, ["Home", "Test",  "Contact"], 
@@ -120,7 +119,7 @@ elif selected == "Contact":
           <li>Graduated </li>
         </ul>
         <a href='https://ide.geeksforgeeks.org/'>
-        <button class="hover-item" style="border-radius: 8px; border: none; width: 50%; background-color: #85C0F9; color: white;">
+        <button class="hover-item" style="border-radius: 8px; border: none; width: 20%; background-color: #85C0F9; color: white;">
             Contact
         </button>
         </a>
@@ -138,7 +137,7 @@ elif selected == "Contact":
           <li>Graduated </li>
         </ul>
         <a href='ms.suyiphyo5@gmail.com'>
-        <button class="hover-item" style="border-radius: 8px; border: none; width: 50%; background-color: #85C0F9; color: white;">
+        <button class="hover-item" style="border-radius: 8px; border: none; width: 20%; background-color: #85C0F9; color: white;">
             Contact
         </button>
         </a>
@@ -156,7 +155,7 @@ elif selected == "Contact":
           <li>Graduated </li>
         </ul>
         <a href='https://ide.geeksforgeeks.org/'>
-        <button class="hover-item" style="border-radius: 8px; border: none; width: 50%; background-color: #85C0F9; color: white;">
+        <button class="hover-item" style="border-radius: 8px; border: none; width: 20%; background-color: #85C0F9; color: white;">
             Contact
         </button>
         </a>
