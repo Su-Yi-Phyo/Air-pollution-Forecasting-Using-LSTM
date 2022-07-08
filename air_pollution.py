@@ -124,8 +124,8 @@ elif selected == "Contact":
         </button>
         </a>
   """, unsafe_allow_html = True)
+  st.markdown("""""", unsafe_allow_html = True)
 
-  st.write()
   st.image("SYP.jpg", width = 500)
   st.markdown("""
      <div class="container">
@@ -140,8 +140,8 @@ elif selected == "Contact":
         </button>
         </a>
   """, unsafe_allow_html = True)
+  st.markdown("""""", unsafe_allow_html = True)
 
-  st.write()
   st.image("Nyein Thiha Zaw.jpg")
   st.markdown("""
      <div class="container">
@@ -156,8 +156,8 @@ elif selected == "Contact":
         </button>
         </a>
   """, unsafe_allow_html = True)
+  st.markdown("""""", unsafe_allow_html = True)
 
-  st.write()
   st.image("Nyein Thiha Zaw.jpg")
   st.markdown("""
      <div class="container">
