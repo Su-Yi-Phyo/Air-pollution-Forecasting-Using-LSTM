@@ -106,70 +106,43 @@ elif selected == "Test":
 #           st.bokeh_chart(p, use_container_width=True)
 
 elif selected == "Contact":
-  st.markdown("""
-     <h1 style="color: #0F2080; text-align: center;"> Meet Our Team </h1>
-  """,unsafe_allow_html = True)
+  <div class="row">
+  <div class="column" style="float: left; width: 33.3%; margin-bottom: 16px; padding: 0 8px; width: 100%; display: block;">
+    <div class="card">
+      <img src="img1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO &amp; Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
 
-  st.image("Nyein Thiha Zaw.jpg")
-  st.markdown("""
-     <div class="container", >
-        <h2>Nyein Thiha Zaw</h2>
-        <p class="title">Team Leader</p>
-        <ul>
-          <li>Graduated </li>
-        </ul>
-        <a href='nyeinthihazaw219198@gmail.com'>
-        <button class="hover-item" style="border-radius: 8px; border: none; width: 10%; background-color: #85C0F9; color: white;">
-            Contact
-        </button>
-        </a>
-  """, unsafe_allow_html = True)
-  st.markdown("""""", unsafe_allow_html = True)
+  <div class="column"  style="float: left; width: 33.3%; margin-bottom: 16px; padding: 0 8px; width: 100%; display: block;">
+    <div class="card">
+      <img src="img2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
 
-  st.image("SYP.jpg", width = 500)
-  st.markdown("""
-     <div class="container">
-        <h2>Su Yi Phyo</h2>
-        <p class="title">Team Member</p>
-        <ul>
-          <li>Graduated </li>
-        </ul>
-        <a href='https://github.com/Su-Yi-Phyo'>
-        <button class="hover-item" style="border-radius: 8px; border: none; width: 10%; background-color: #85C0F9; color: white;">
-            Contact
-        </button>
-        </a>
-  """, unsafe_allow_html = True)
-  st.markdown("""""", unsafe_allow_html = True)
-
-  st.image("Nyein Thiha Zaw.jpg")
-  st.markdown("""
-     <div class="container">
-        <h2>Si Thu Aung</h2>
-        <p class="title">Team Member</p>
-        <ul>
-          <li>Graduated </li>
-        </ul>
-        <a href='iceacemountain@gmail.com'>
-        <button class="hover-item" style="border-radius: 8px; border: none; width: 10%; background-color: #85C0F9; color: white;">
-            Contact
-        </button>
-        </a>
-  """, unsafe_allow_html = True)
-  st.markdown("""""", unsafe_allow_html = True)
-
-  st.image("Nyein Thiha Zaw.jpg")
-  st.markdown("""
-     <div class="container">
-        <h2>Hsu Ei</h2>
-        <p class="title">Team Member</p>
-        <ul>
-          <li>Graduated </li>
-        </ul>
-        <a href='hsueieinu@gmail.com '>
-        <button class="hover-item" style="border-radius: 8px; border: none; width: 10%; background-color: #85C0F9; color: white;">
-            Contact
-        </button>
-        </a>
-  """, unsafe_allow_html = True)
-
+  <div class="column"  style="float: left; width: 33.3%; margin-bottom: 16px; padding: 0 8px;">
+    <div class="card">
+      <img src="img3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
