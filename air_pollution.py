@@ -28,14 +28,8 @@ if selected == "Home":
   with st.container():
     st.title('Air Pollution Forecasting')
 
-    st.write("<p>The Equity Explorer is a set of Arup-designed analyses to identify vulnerable and historically under-served geographies at the census tract level. The tool provides a transparent, Arup-approved framework for approaching equity and allows users to compare indicators and explore the data for census tracts across the US. Users can also customize a transportation vulnerability index for their specific planning purposes to best understand which areas have the biggest gaps in accessibility and demand.</p>",unsafe_allow_html=True)
-    st.image('https://cdn.corporatefinanceinstitute.com/assets/line-graph.jpg')
-
-    st.write("<p>The Equity Explorer is a set of Arup-designed analyses to identify vulnerable and historically under-served geographies at the census tract level. The tool provides a transparent, Arup-approved framework for approaching equity and allows users to compare indicators and explore the data for census tracts across the US. Users can also customize a transportation vulnerability index for their specific planning purposes to best understand which areas have the biggest gaps in accessibility and demand.</p>",unsafe_allow_html=True)
-    st.image('https://sites.google.com/a/stu.ximb.ac.in/pfc-fra/_/rsrc/1404573351589/share-price/line-graph/pfc%201.jpg')
-
-    st.write("<p>The Equity Explorer is a set of Arup-designed analyses to identify vulnerable and historically under-served geographies at the census tract level. The tool provides a transparent, Arup-approved framework for approaching equity and allows users to compare indicators and explore the data for census tracts across the US. Users can also customize a transportation vulnerability index for their specific planning purposes to best understand which areas have the biggest gaps in accessibility and demand.</p>",unsafe_allow_html=True)
-    st.image('https://www.perkinselearning.org/sites/elearning.perkinsdev1.org/files/Amazon_1.png')
+    st.write("<p>With the advance of technology, it is increasingly exhaust emissions that have caused air pollution. In particular, PM2.5 (Particulate Matter) has been proven that it has a great correlation with human health. Therefore, the detection and prediction of PM 2.5 air pollution is an important issue. Countries around the world have built a variety of sensing devices for monitoring PM2.5 concentrations. There were also many studies constructed to predict and forecast various air pollution. Therefore, how to accurately forecast PM2.5 has become an important issue in recent years.In this project, we propose an approach to forecast PM2.5 concentration using RNN (Recurrent Neural Network) with LSTM (Long Short-Term Memory)./n The training data used in the network is retrieved from Kaggle which is a dataset that reports on the weather and the level of pollution each hour for five years at the US embassy in Beijing, China for the years 2010 to 2014.The data includes the date-time, the pollution called PM2.5 concentration, and the weather information including dew point, temperature, pressure, wind direction, wind speed and the cumulative number of hours of snow and rain.
+    </p>",unsafe_allow_html=True)
 
 elif selected == "Test":
       with st.container():
