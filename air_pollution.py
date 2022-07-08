@@ -81,7 +81,7 @@ elif selected == "Test":
           print(mean_op,std_op)
           result=result*std_op + mean_op
 
-         print(result)
+          print(result)
 
 elif selected == "Contact":
   st.markdown("""
