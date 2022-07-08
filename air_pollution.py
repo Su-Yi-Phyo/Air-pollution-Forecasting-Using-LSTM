@@ -44,44 +44,44 @@ elif selected == "Test":
 
         if uploaded_file is not None:
           csv_file= pd.read_csv(uploaded_file)
+          print(csv_file)
 
-          #change wind_dir and del previous one
-          def func(s):
-              if s == "SE":
-                  return 1
-              elif s == "NE":
-                  return 2
-              elif s == "NW":
-                  return 3
-              else:
-                  return 4
+#           #change wind_dir and del previous one
+#           def func(s):
+#               if s == "SE":
+#                   return 1
+#               elif s == "NE":
+#                   return 2
+#               elif s == "NW":
+#                   return 3
+#               else:
+#                   return 4
 
-          csv_file["wind_dir"] = csv_file["wnd_dir"].apply(func)
-          del csv_file["wnd_dir"]
+#           csv_file["wind_dir"] = csv_file["wnd_dir"].apply(func)
+#           del csv_file["wnd_dir"]
 
-          #scaling
-          dataset = csv_file
-          values = dataset.values
+#           #scaling
+#           dataset = csv_file
+#           values = dataset.values
 
-          values = values.astype('float32')
+#           values = values.astype('float32')
 
-          scaler = MinMaxScaler(feature_range=(0, 1))
-          scaled = scaler.fit_transform(values)
+#           scaler = MinMaxScaler(feature_range=(0, 1))
+#           scaled = scaler.fit_transform(values)
 
-          test_x = scaled
-          test_x = test_x.reshape((test_x.shape[0], 1, test_x.shape[1]))
+#           test_x = scaled
+#           test_x = test_x.reshape((test_x.shape[0], 1, test_x.shape[1]))
 
-          #predicting
-          result=model.predict(test_x)
-          result=result.ravel()
+#           #predicting
+#           result=model.predict(test_x)
+#           result=result.ravel()
 
-          poll=np.array(csv_file['pollution'])
-          mean_op=poll.mean()
-          std_op=poll.std()
-          print(mean_op,std_op)
-          result=result*std_op + mean_op
+#           poll=np.array(csv_file['pollution'])
+#           mean_op=poll.mean()
+#           std_op=poll.std()
+#           result=result*std_op + mean_op
 
-          print(result)
+#           print(result)
 
 elif selected == "Contact":
   st.markdown("""
