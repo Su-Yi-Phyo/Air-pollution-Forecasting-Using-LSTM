@@ -84,13 +84,26 @@ elif selected == "Test":
           result=result*std_op + mean_op
 
           #graph output
-          plt.figure(figsize=(18,5.5))
-          plt.ylabel("ppm")
-          plt.xlabel("hrs")
-          plt.plot(result, c = "darkblue", alpha = 0.75,label='Prediction Data')
-          plt.legend()
-          plt.title("Testing data")
-          st.pyplot(result)
+          from bokeh.plotting import figure
+
+          x = [1, 2, 3, 4, 5]
+          y = [6, 7, 2, 4, 5]
+
+          p = figure(
+          title='simple line example',
+          x_axis_label='x',
+          y_axis_label='y')
+
+          p.line(x, y, legend_label='Trend', line_width=2)
+
+          st.bokeh_chart(p, use_container_width=True)
+#           plt.figure(figsize=(18,5.5))
+#           plt.ylabel("ppm")
+#           plt.xlabel("hrs")
+#           plt.plot(result, c = "darkblue", alpha = 0.75,label='Prediction Data')
+#           plt.legend()
+#           plt.title("Testing data")
+#           st.pyplot(result)
           
 elif selected == "Contact":
   st.markdown("""
