@@ -67,10 +67,10 @@ elif selected == "Test":
 
           scaler = MinMaxScaler(feature_range=(0, 1))
           scaled = scaler.fit_transform(values)
-          scaled
 
-#           test_x = scaled
-#           test_x = test_x.reshape((test_x.shape[0], 1, test_x.shape[1]))
+          test_x = scaled
+          test_x = test_x.reshape((test_x.shape[0], 1, test_x.shape[1]))
+          test_x
 
 #           #predicting
 #           result=model.predict(test_x)
