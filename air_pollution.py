@@ -113,13 +113,13 @@ elif selected == "Contact":
     <div class="column">
       <div class="column">
         <div class="card">
-          <img src="https://i.pinimg.com/originals/e5/71/4a/e5714a28c71efc5235c89db3cb2fa801.jpg">
+          <img src="Nyein Thiha Zaw.jpg">
             <div class="column">
               <div class="container">
                   <h2>Nyein Thiha Zaw</h2>
                   <p class="title">Team Leader</p>
                   <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p>example@example.com</p>
+                  <p>nyeinthihazaw219198@gmail.com</p>
                   <ul class="wrapper">
                     <li class="icon facebook">
                       <span class="tooltip">Facebook</span>
