@@ -134,7 +134,7 @@ elif selected == "Contact":
         <ul>
           <li>Graduated </li>
         </ul>
-        <a href='ms.suyiphyo5@gmail.com'>
+        <a href='https://github.com/Su-Yi-Phyo'>
         <button class="hover-item" style="border-radius: 8px; border: none; width: 10%; background-color: #85C0F9; color: white;">
             Contact
         </button>
