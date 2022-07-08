@@ -108,36 +108,33 @@ elif selected == "Test":
           
 elif selected == "Contact":
   st.markdown("""
-  <div class="row">
-    <h1 style="color:#0F2080; text-align:center; font-style:bold;">Meet Our Team</h1>
-    <div class="column">
-      <div class="column">
-        <div class="card">
-          <img src="Nyein Thiha Zaw.jpg">
-            <div class="column">
-              <div class="container">
-                  <h2>Nyein Thiha Zaw</h2>
-                  <p class="title">Team Leader</p>
-                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p>nyeinthihazaw219198@gmail.com</p>
-                  <ul class="wrapper">
-                    <li class="icon facebook">
-                      <span class="tooltip">Facebook</span>
-                      <span><i class="fab fa-facebook-f"></i></span>
-                    </li>
-                    <li class="icon instagram">
-                      <span class="tooltip">Instagram</span>
-                      <span><i class="fab fa-instagram"></i></span>
-                    </li>
-                    <li class="icon github">
-                      <span class="tooltip">Github</span>
-                      <span><i class="fab fa-github"></i></span>
-                    </li>
-                  </ul>
-              </div>
-            </div>
-        </div>
+    <div class="row">
+    <h1 style="">Meet Our Team</h1>
+  <div class="column">
+    <div class="card">
+      <img src="https://i.pinimg.com/originals/e5/71/4a/e5714a28c71efc5235c89db3cb2fa801.jpg">
+      <div class="container">
+        <h2>Nyein Thiha Zaw</h2>
+        <p class="title">Team Leader</p>
+        <a href='https://ide.geeksforgeeks.org/'>
+        <button class="GFG">
+            Click Here
+        </button>
+        </a>
       </div>
     </div>
   </div>
-  """,unsafe_allow_html=True)
+
+  <div class="column">
+    <div class="card">
+      <img src="https://i.pinimg.com/originals/e5/71/4a/e5714a28c71efc5235c89db3cb2fa801.jpg">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  """, unsafe_allow_html=True)
