@@ -11,6 +11,10 @@ from streamlit_option_menu import option_menu
 
 model = load_model('AirPollutionModel.h5')
 
+st.set_page_config(
+     page_title="Air Pollution Forecasting App",
+     page_icon="https://github.com/Su-Yi-Phyo/Air-pollution-Forecasting-Using-LSTM/blob/main/pollution.png",
+     layout="wide")
 
 with st.sidebar:
   selected = option_menu(None, ["Home", "Test",  "Contact"], 
@@ -108,7 +112,7 @@ elif selected == "Contact":
     <h1 style="color: #0F2080">Meet Our Team</h1>
   <div class="column">
     <div class="card">
-      <img src="SYP.jpg">
+      <img src="https://github.com/Su-Yi-Phyo/Air-pollution-Forecasting-Using-LSTM/blob/main/Nyein%20Thiha%20Zaw.jpg">
       <div class="container">
         <h2>Nyein Thiha Zaw</h2>
         <p class="title">Team Leader</p>
@@ -126,7 +130,7 @@ elif selected == "Contact":
 
   <div class="column">
     <div class="card">
-      <img src="SYP.jpg">
+      <img src="https://github.com/Su-Yi-Phyo/Air-pollution-Forecasting-Using-LSTM/blob/main/SYP.jpg">
       <div class="container">
         <h2>Su Yi Phyo</h2>
         <p class="title">Team Member</p>
