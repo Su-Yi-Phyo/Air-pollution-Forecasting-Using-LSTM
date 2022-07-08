@@ -84,9 +84,16 @@ elif selected == "Test":
           result=result*std_op + mean_op
 
           #graph output
-#           st.line_chart(result)
-          line_chart = alt.Chart(result).mark_line(interpolate='basis').encode(alt.X('x', title='Year'),alt.Y('y', title='Amount in liters'),color='category:N').properties(title='Sales of consumer goods')
-          st.altair_chart(line_chart)
+          chart = (
+          alt.Chart(
+            data=result,
+            title="Your title",)
+          .mark_line()
+          .encode(
+            x=alt.X("capacity 1", axis=alt.Axis(title="Capacity 1")),
+            x=alt.X("capacity 2", axis=alt.Axis(title="Capacity 2")),))
+
+          st.line_chart(chart)
           
 elif selected == "Contact":
   st.markdown("""
