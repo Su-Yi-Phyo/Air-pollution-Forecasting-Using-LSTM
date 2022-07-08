@@ -1,11 +1,12 @@
 import streamlit as st
-from utils import chart, db
-from streamlit_option_menu import option_menu
+import altair as alt
 import pandas as pd
 import numpy as np
+
 from matplotlib import pyplot as plt
 from keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
+from streamlit_option_menu import option_menu
 
 
 model = load_model('AirPollutionModel.h5')
