@@ -107,7 +107,7 @@ elif selected == "Test":
 
 elif selected == "Contact":
   st.markdown("""
-     <h1 style="color: #0F2080"> Meet Our Team </h1>
+     <h1 style="color: #0F2080; text-align: center;"> Meet Our Team </h1>
   """,unsafe_allow_html = True)
   st.image("Nyein Thiha Zaw.jpg")
   st.markdown("""
@@ -124,7 +124,8 @@ elif selected == "Contact":
         </a>
   """, unsafe_allow_html = True)
 
-  st.image("SYP.jpg")
+  st.write()
+  st.image("SYP.jpg", width = 500px)
   st.markdown("""
      <div class="container">
         <h2>Su Yi Phyo</h2>
@@ -139,6 +140,7 @@ elif selected == "Contact":
         </a>
   """, unsafe_allow_html = True)
 
+  st.write()
   st.image("Nyein Thiha Zaw.jpg")
   st.markdown("""
      <div class="container">
@@ -154,6 +156,7 @@ elif selected == "Contact":
         </a>
   """, unsafe_allow_html = True)
 
+  st.write()
   st.image("Nyein Thiha Zaw.jpg")
   st.markdown("""
      <div class="container">
