@@ -106,7 +106,8 @@ elif selected == "Test":
 #           st.bokeh_chart(p, use_container_width=True)
 
 elif selected == "Contact":
-  <div class="row">
+ st.markdown("""
+ <div class="row">
   <div class="column" style="float: left; width: 33.3%; margin-bottom: 16px; padding: 0 8px; width: 100%; display: block;">
     <div class="card">
       <img src="img1.jpg" alt="Jane" style="width:100%">
@@ -146,3 +147,5 @@ elif selected == "Contact":
     </div>
   </div>
 </div>
+
+ """,unsafe_allow_html=True)
