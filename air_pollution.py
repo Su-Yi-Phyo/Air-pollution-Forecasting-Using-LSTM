@@ -84,16 +84,13 @@ elif selected == "Test":
           result=result*std_op + mean_op
 
           #graph output
-          chart = (
-          alt.Chart(
-            data=result,
-            title="Your title",)
-          .mark_line()
-          .encode(
-            x=alt.X("capacity 1", axis=alt.Axis(title="Capacity 1")),
-            x=alt.X("capacity 2", axis=alt.Axis(title="Capacity 2")),))
-
-          st.line_chart(chart)
+          plt.figure(figsize=(18,5.5))
+          plt.ylabel("ppm")
+          plt.xlabel("hrs")
+          plt.plot(result, c = "darkblue", alpha = 0.75,label='Prediction Data')
+          plt.legend()
+          plt.title("Testing data")
+          st.pyplot(result)
           
 elif selected == "Contact":
   st.markdown("""
