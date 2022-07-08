@@ -1,6 +1,6 @@
 streamlit
 numpy
-matplolib
+matplotlib
 pandas
 keras
 scikit-learn
