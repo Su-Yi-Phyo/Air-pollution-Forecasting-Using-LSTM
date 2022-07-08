@@ -45,7 +45,7 @@ elif selected == "Test":
         uploaded_file = st.file_uploader("Choose a file...")
 
         if uploaded_file is not None:
-          csv_file= pd.read_csv(uploaded_file)
+          csv_file= pd.read_csv(uploaded_file, colums=['Air Pollution Prediction'])
 
           #change wind_dir and del previous one
           def func(s):
@@ -84,7 +84,10 @@ elif selected == "Test":
           result=result*std_op + mean_op
 
           #graph output
-          st.line_chart(result, colums=['Air Pollution Prediction'])
+#           chart_data = pd.DataFrame(
+#           result,
+#           colums=['Air Pollution Prediction'])
+          st.line_chart(result)
 #           from bokeh.plotting import figure
 
 #           x = []
