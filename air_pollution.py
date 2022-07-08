@@ -117,7 +117,7 @@ elif selected == "Contact":
         <h2>Nyein Thiha Zaw</h2>
         <p class="title">Team Leader</p>
         <a href='https://ide.geeksforgeeks.org/'>
-        <button class="hover-item" style="border-radius: 8px; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); background-color: #0F2080; color: white;">
+        <button class="hover-item" style="border-radius: 8px; background-color: #85C0F9; color: white;">
             Contact
         </button>
         </a>
