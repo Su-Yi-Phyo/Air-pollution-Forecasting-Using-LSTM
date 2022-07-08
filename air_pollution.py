@@ -83,7 +83,6 @@ elif selected == "Test":
           result=result*std_op + mean_op
 
           #graph output
-          chart_data = pd.DataFrame(result, columns=['Prediction Data'], title="Air pollution prediction",x="hrs",y="ppm")
           st.line_chart(chart_data)
           
 elif selected == "Contact":
