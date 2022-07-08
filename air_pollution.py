@@ -107,60 +107,65 @@ elif selected == "Test":
 
 elif selected == "Contact":
   st.markdown("""
-    <div class="row">
-    <h1 style="color: #0F2080">Meet Our Team</h1>
-  <div class="column">
-    <div class="card">
-      <img src="Nyein Thiha Zaw.jpg">
-      <div class="container">
+     <h1 style="color: #0F2080"> Meet Our Team </h1>
+  """,unsafe_allow_html = True)
+  st.image("Nyein Thiha Zaw.jpg")
+  st.markdown("""
+     <div class="container">
         <h2>Nyein Thiha Zaw</h2>
         <p class="title">Team Leader</p>
         <ul>
           <li>Graduated </li>
         </ul>
-        <a href='https://ide.geeksforgeeks.org/'>
-        <button class="hover-item" style="border-radius: 8px; border: none; width: 50%; background-color: #85C0F9; color: white;">
+        <a href='nyeinthihazaw219198@gmail.com'>
+        <button class="hover-item" style="border-radius: 8px; border: none; width: 20%; background-color: #85C0F9; color: white;">
             Contact
         </button>
         </a>
-      </div>
-    </div>
-  </div>
+  """, unsafe_allow_html = True)
 
-  <div class="column">
-    <div class="card">
-      <img src="SYP.jpg">
-      <div class="container">
+  st.image("SYP.jpg")
+  st.markdown("""
+     <div class="container">
         <h2>Su Yi Phyo</h2>
         <p class="title">Team Member</p>
         <ul>
           <li>Graduated </li>
         </ul>
         <a href='ms.suyiphyo5@gmail.com'>
-        <button class="hover-item" style="border-radius: 8px; border: none; width: 50%; background-color: #85C0F9; color: white;">
+        <button class="hover-item" style="border-radius: 8px; border: none; width: 20%; background-color: #85C0F9; color: white;">
             Contact
         </button>
         </a>
-      </div>
-    </div>
-  </div>
+  """, unsafe_allow_html = True)
 
-  <div class="column">
-    <div class="card">
-      <img src="SYP.jpg">
-      <div class="container">
+  st.image("Nyein Thiha Zaw.jpg")
+  st.markdown("""
+     <div class="container">
         <h2>Si Thu Aung</h2>
         <p class="title">Team Member</p>
         <ul>
           <li>Graduated </li>
         </ul>
-        <a href='https://ide.geeksforgeeks.org/'>
-        <button class="hover-item" style="border-radius: 8px; border: none; width: 50%; background-color: #85C0F9; color: white;">
+        <a href='iceacemountain@gmail.com'>
+        <button class="hover-item" style="border-radius: 8px; border: none; width: 20%; background-color: #85C0F9; color: white;">
             Contact
         </button>
         </a>
-      </div>
-    </div>
-  </div>
-  </div>
-  """, unsafe_allow_html=True)
+  """, unsafe_allow_html = True)
+
+  st.image("Nyein Thiha Zaw.jpg")
+  st.markdown("""
+     <div class="container">
+        <h2>Hsu Ei</h2>
+        <p class="title">Team Member</p>
+        <ul>
+          <li>Graduated </li>
+        </ul>
+        <a href='hsueieinu@gmail.com '>
+        <button class="hover-item" style="border-radius: 8px; border: none; width: 20%; background-color: #85C0F9; color: white;">
+            Contact
+        </button>
+        </a>
+  """, unsafe_allow_html = True)
+
