@@ -110,11 +110,8 @@ elif selected == "Contact":
     <div class="row">
     <h1 style="color: #0F2080">Meet Our Team</h1>
   <div class="column">
-    <div class = "column">
     <div class="card">
-      <img src="SYP.jpg">
-     </div>
-     <div class = "column">
+      <img src="Nyein Thiha Zaw.jpg">
       <div class="container">
         <h2>Nyein Thiha Zaw</h2>
         <p class="title">Team Leader</p>
@@ -126,7 +123,6 @@ elif selected == "Contact":
             Contact
         </button>
         </a>
-       </div>
       </div>
     </div>
   </div>
