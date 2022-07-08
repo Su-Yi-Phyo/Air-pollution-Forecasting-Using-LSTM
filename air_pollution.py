@@ -81,15 +81,7 @@ elif selected == "Test":
           print(mean_op,std_op)
           result=result*std_op + mean_op
 
-          #graph output
-          plt.figure(figsize=(18,5.5))
-          plt.ylabel("ppm")
-          plt.xlabel("hrs")
-          plt.plot(result, c = "darkblue", alpha = 0.75,label='Prediction Data')
-          plt.legend()
-          plt.title("Testing data")
-          plt.show()
-
+         print(result)
 
 elif selected == "Contact":
   st.markdown("""
