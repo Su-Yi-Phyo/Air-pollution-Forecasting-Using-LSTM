@@ -108,60 +108,30 @@ elif selected == "Test":
 elif selected == "Contact":
   st.markdown("""
     <div class="row">
-    <h1 style="color: #0F2080">Meet Our Team</h1>
+    <h1 style="">Meet Our Team</h1>
   <div class="column">
     <div class="card">
-      <img src="https://github.com/Su-Yi-Phyo/Air-pollution-Forecasting-Using-LSTM/blob/main/Nyein%20Thiha%20Zaw.jpg">
+      <img src="https://i.pinimg.com/originals/e5/71/4a/e5714a28c71efc5235c89db3cb2fa801.jpg">
       <div class="container">
         <h2>Nyein Thiha Zaw</h2>
         <p class="title">Team Leader</p>
-        <ul>
-          <li>Graduated </li>
-        </ul>
-        <a href='https://ide.geeksforgeeks.org/'>
-        <button class="hover-item" style="border-radius: 8px; border: none; width: 20%; background-color: #85C0F9; color: white;">
-            Contact
-        </button>
-        </a>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
       </div>
     </div>
   </div>
 
   <div class="column">
     <div class="card">
-      <img src="https://github.com/Su-Yi-Phyo/Air-pollution-Forecasting-Using-LSTM/blob/main/SYP.jpg">
+      <img src="https://i.pinimg.com/originals/e5/71/4a/e5714a28c71efc5235c89db3cb2fa801.jpg">
       <div class="container">
-        <h2>Su Yi Phyo</h2>
-        <p class="title">Team Member</p>
-        <ul>
-          <li>Graduated </li>
-        </ul>
-        <a href='ms.suyiphyo5@gmail.com'>
-        <button class="hover-item" style="border-radius: 8px; border: none; width: 20%; background-color: #85C0F9; color: white;">
-            Contact
-        </button>
-        </a>
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
       </div>
     </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="SYP.jpg">
-      <div class="container">
-        <h2>Si Thu Aung</h2>
-        <p class="title">Team Member</p>
-        <ul>
-          <li>Graduated </li>
-        </ul>
-        <a href='https://ide.geeksforgeeks.org/'>
-        <button class="hover-item" style="border-radius: 8px; border: none; width: 20%; background-color: #85C0F9; color: white;">
-            Contact
-        </button>
-        </a>
-      </div>
-    </div>
-  </div>
   </div>
   """, unsafe_allow_html=True)
- 
