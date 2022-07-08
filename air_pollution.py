@@ -117,7 +117,7 @@ elif selected == "Contact":
         <h2>Nyein Thiha Zaw</h2>
         <p class="title">Team Leader</p>
         <a href='https://ide.geeksforgeeks.org/'>
-        <button class="GFG" style="border-radius: 8px; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); background-color: #0F2080; color: white;">
+        <button class="hover-item" style="border-radius: 8px; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); background-color: #0F2080; color: white;">
             Contact
         </button>
         </a>
@@ -125,16 +125,6 @@ elif selected == "Contact":
     </div>
   </div>
 
-  <div class="column">
-    <div class="card">
-      <img src="https://i.pinimg.com/originals/e5/71/4a/e5714a28c71efc5235c89db3cb2fa801.jpg">
-      <div class="container">
-        <h2>Mike Ross</h2>
-        <p class="title">Art Director</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
+
   </div>
   """, unsafe_allow_html=True)
