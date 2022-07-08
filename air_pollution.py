@@ -112,7 +112,7 @@ elif selected == "Test":
               .add_selection(brush)
               .properties(width=550)
               .transform_filter(click)
-          )
+            )
 
           bars = (
               alt.Chart(source)
@@ -128,7 +128,7 @@ elif selected == "Test":
               .add_selection(click)
           )
 
-          return lines & bars
+        return lines & bars
         
         st.altair_chart(plot_all_downloads(result), use_container_width=True)
 
