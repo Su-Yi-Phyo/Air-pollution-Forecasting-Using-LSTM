@@ -84,51 +84,51 @@ elif selected == "Test":
           
           #graph copy
           def plot_all_downloads(
-          source, x="date", y="downloads", group="project", axis_scale="linear"):
+            source, x="date", y="downloads", group="project", axis_scale="linear"):
 
-          brush = alt.selection_interval(encodings=["x"], empty="all")
+            brush = alt.selection_interval(encodings=["x"], empty="all")
 
-          click = alt.selection_multi(encodings=["color"])
+            click = alt.selection_multi(encodings=["color"])
 
-          lines = (
-              (
-                  alt.Chart(source)
-                  .mark_line(point=True)
-                  .encode(
-                      x=x,
-                      y=alt.Y("downloads", scale=alt.Scale(type=f"{axis_scale}")),
-                      color=group,
-                      tooltip=[
-                          "date",
-                          "project",
-                          "downloads",
-                          alt.Tooltip("delta", format=".2%"),
-                      ],
-                  )
-              )
-              .add_selection(brush)
-              .properties(width=550)
-              .transform_filter(click)
+            lines = (
+                (
+                    alt.Chart(source)
+                    .mark_line(point=True)
+                    .encode(
+                        x=x,
+                        y=alt.Y("downloads", scale=alt.Scale(type=f"{axis_scale}")),
+                        color=group,
+                        tooltip=[
+                            "date",
+                            "project",
+                            "downloads",
+                            alt.Tooltip("delta", format=".2%"),
+                        ],
+                    )
+                )
+                .add_selection(brush)
+                .properties(width=550)
+                .transform_filter(click)
+                )
+
+            bars = (
+                alt.Chart(source)
+                .mark_bar()
+                .encode(
+                    y=group,
+                    color=group,
+                    x=alt.X("downloads:Q", scale=alt.Scale(type=f"{axis_scale}")),
+                    tooltip=["date", "downloads", alt.Tooltip("delta", format=".2%")],
+                )
+                .transform_filter(brush)
+                .properties(width=550)
+                .add_selection(click)
             )
-
-          bars = (
-              alt.Chart(source)
-              .mark_bar()
-              .encode(
-                  y=group,
-                  color=group,
-                  x=alt.X("downloads:Q", scale=alt.Scale(type=f"{axis_scale}")),
-                  tooltip=["date", "downloads", alt.Tooltip("delta", format=".2%")],
-              )
-              .transform_filter(brush)
-              .properties(width=550)
-              .add_selection(click)
-          )
 
             return lines & bars
         
             st.altair_chart(plot_all_downloads(result), use_container_width=True)
-
+          
 elif selected == "Contact":
   st.markdown("""
     <div class="row">
