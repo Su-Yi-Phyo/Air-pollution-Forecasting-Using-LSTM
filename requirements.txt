@@ -6,4 +6,3 @@ keras
 scikit-learn
 streamlit_option_menu
 keras.models
-sklearn.preprocessing
