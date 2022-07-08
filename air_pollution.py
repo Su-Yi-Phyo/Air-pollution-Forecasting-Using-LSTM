@@ -70,18 +70,17 @@ elif selected == "Test":
 
           test_x = scaled
           test_x = test_x.reshape((test_x.shape[0], 1, test_x.shape[1]))
-          test_x
 
-#           #predicting
-#           result=model.predict(test_x)
-#           result=result.ravel()
+          #predicting
+          result=model.predict(test_x)
+          result=result.ravel()
 
-#           poll=np.array(csv_file['pollution'])
-#           mean_op=poll.mean()
-#           std_op=poll.std()
-#           result=result*std_op + mean_op
+          poll=np.array(csv_file['pollution'])
+          mean_op=poll.mean()
+          std_op=poll.std()
+          result=result*std_op + mean_op
 
-#           print(result)
+          result
 
 elif selected == "Contact":
   st.markdown("""
