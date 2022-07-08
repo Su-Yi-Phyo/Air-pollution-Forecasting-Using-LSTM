@@ -80,7 +80,9 @@ elif selected == "Test":
           std_op=poll.std()
           result=result*std_op + mean_op
 
-          result
+          source = source[source.symbol.isin(result)]
+          chart = chart.get_chart(source)
+          st.altair_chart(chart, use_container_width=True)
 
 elif selected == "Contact":
   st.markdown("""
