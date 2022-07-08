@@ -30,7 +30,8 @@ if selected == "Home":
 
     st.markdown("""
       <p style="text-align:justify;">With the advance of technology, it is increasingly exhaust emissions that have caused air pollution. In particular, PM2.5 (Particulate Matter) has been proven that it has a great correlation with human health. Therefore, the detection and prediction of PM 2.5 air pollution is an important issue. Countries around the world have built a variety of sensing devices for monitoring PM2.5 concentrations. There were also many studies constructed to predict and forecast various air pollution. Therefore, how to accurately forecast PM2.5 has become an important issue in recent years.In this project, we propose an approach to forecast PM2.5 concentration using RNN (Recurrent Neural Network) with LSTM (Long Short-Term Memory). </p>
-    """)
+    """,unsafe_allow_html = True)
+    
 elif selected == "Test":
       with st.container():
         st.header("Testing")
