@@ -60,7 +60,7 @@ elif selected == "Test":
 
           csv_file["wind_dir"] = csv_file["wnd_dir"].apply(func)
           del csv_file["wnd_dir"]
-          
+
           #scaling
           dataset = csv_file
           values = dataset.values
@@ -80,54 +80,17 @@ elif selected == "Test":
           poll=np.array(csv_file['pollution'])
           mean_op=poll.mean()
           std_op=poll.std()
+          print(mean_op,std_op)
           result=result*std_op + mean_op
-          
-          #graph copy
-          def plot_all_downloads(
-            source, x="date", y="downloads", group="project", axis_scale="linear"):
 
-            brush = alt.selection_interval(encodings=["x"], empty="all")
-
-            click = alt.selection_multi(encodings=["color"])
-
-            lines = (
-                (
-                    alt.Chart(source)
-                    .mark_line(point=True)
-                    .encode(
-                        x=x,
-                        y=alt.Y("downloads", scale=alt.Scale(type=f"{axis_scale}")),
-                        color=group,
-                        tooltip=[
-                            "date",
-                            "project",
-                            "downloads",
-                            alt.Tooltip("delta", format=".2%"),
-                        ],
-                    )
-                )
-                .add_selection(brush)
-                .properties(width=550)
-                .transform_filter(click)
-                )
-
-            bars = (
-                alt.Chart(source)
-                .mark_bar()
-                .encode(
-                    y=group,
-                    color=group,
-                    x=alt.X("downloads:Q", scale=alt.Scale(type=f"{axis_scale}")),
-                    tooltip=["date", "downloads", alt.Tooltip("delta", format=".2%")],
-                )
-                .transform_filter(brush)
-                .properties(width=550)
-                .add_selection(click)
-            )
-
-            return lines & bars
-        
-            st.altair_chart(plot_all_downloads(result), use_container_width=True)
+          #graph output
+          plt.figure(figsize=(18,5.5))
+          plt.ylabel("ppm")
+          plt.xlabel("hrs")
+          plt.plot(result, c = "darkblue", alpha = 0.75,label='Prediction Data')
+          plt.legend()
+          plt.title("Testing data")
+          plt.show()
           
 elif selected == "Contact":
   st.markdown("""
