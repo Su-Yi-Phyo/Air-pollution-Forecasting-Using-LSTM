@@ -44,7 +44,7 @@ elif selected == "Test":
 
         if uploaded_file is not None:
           csv_file= pd.read_csv(uploaded_file)
-          print(csv_file)
+          csv_file
 
 #           #change wind_dir and del previous one
 #           def func(s):
