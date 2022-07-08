@@ -84,7 +84,7 @@ elif selected == "Test":
           result=result*std_op + mean_op
 
           #graph output
-          st.line_chart(result, colums=['Air Pollution Prediction'])
+          st.line_chart(result)
 
 elif selected == "Contact":
   st.markdown("""
