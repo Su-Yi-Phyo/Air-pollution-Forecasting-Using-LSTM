@@ -44,21 +44,21 @@ elif selected == "Test":
 
         if uploaded_file is not None:
           csv_file= pd.read_csv(uploaded_file)
+
+          #change wind_dir and del previous one
+          def func(s):
+              if s == "SE":
+                  return 1
+              elif s == "NE":
+                  return 2
+              elif s == "NW":
+                  return 3
+              else:
+                  return 4
+
+          csv_file["wind_dir"] = csv_file["wnd_dir"].apply(func)
+          del csv_file["wnd_dir"]
           csv_file
-
-#           #change wind_dir and del previous one
-#           def func(s):
-#               if s == "SE":
-#                   return 1
-#               elif s == "NE":
-#                   return 2
-#               elif s == "NW":
-#                   return 3
-#               else:
-#                   return 4
-
-#           csv_file["wind_dir"] = csv_file["wnd_dir"].apply(func)
-#           del csv_file["wnd_dir"]
 
 #           #scaling
 #           dataset = csv_file
