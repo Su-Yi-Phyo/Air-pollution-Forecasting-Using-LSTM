@@ -1,5 +1,14 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
+import pandas as pd
+import numpy as np
+from matplotlib import pyplot as plt
+from keras.models import load_model
+from sklearn.preprocessing import MinMaxScaler
+
+
+model = load_model('AirPollutionModel.h5')
+
 
 with st.sidebar:
   selected = option_menu(None, ["Home", "Test",  "Contact"], 
@@ -27,23 +36,65 @@ if selected == "Home":
     st.image('https://www.perkinselearning.org/sites/elearning.perkinsdev1.org/files/Amazon_1.png')
 
 elif selected == "Test":
-  with st.container():
-    st.write('This is the first sentence')
-    st.number_input('Temperature:')
-    st.number_input('Wind Speed:')
-    st.number_input('Rain:')
-    st.number_input('Snow:')
-    st.number_input('Dew:')
-    st.number_input('Wind Direction:')
-    st.text_input('Pressure:')
-    st.markdown('This is last sentence')
-    st.write('Output:')
-    st.image('https://www.perkinselearning.org/sites/elearning.perkinsdev1.org/files/Amazon_1.png')
+      with st.container():
+        st.header("Testing")
+        #file upload
+        st.write("Upload your csv file:")
+        uploaded_file = st.file_uploader("Choose a file...")
+
+        if uploaded_file is not None:
+          csv_file= pd.read_csv(uploaded_file)
+
+          #change wind_dir and del previous one
+          def func(s):
+              if s == "SE":
+                  return 1
+              elif s == "NE":
+                  return 2
+              elif s == "NW":
+                  return 3
+              else:
+                  return 4
+
+          csv_file["wind_dir"] = csv_file["wnd_dir"].apply(func)
+          del csv_file["wnd_dir"]
+
+          #scaling
+          dataset = csv_file
+          values = dataset.values
+
+          values = values.astype('float32')
+
+          scaler = MinMaxScaler(feature_range=(0, 1))
+          scaled = scaler.fit_transform(values)
+
+          test_x = scaled
+          test_x = test_x.reshape((test_x.shape[0], 1, test_x.shape[1]))
+
+          #predicting
+          result=model.predict(test_x)
+          result=result.ravel()
+
+          poll=np.array(df['pollution'])
+          mean_op=poll.mean()
+          std_op=poll.std()
+          print(mean_op,std_op)
+          result=result*std_op + mean_op
+
+          #graph output
+          plt.figure(figsize=(18,5.5))
+          plt.ylabel("ppm")
+          plt.xlabel("hrs")
+          plt.plot(result, c = "darkblue", alpha = 0.75,label='Prediction Data')
+          plt.legend()
+          plt.title("Testing data")
+          plt.show()
 
 
 elif selected == "Contact":
   st.markdown("""
     <div class="row">
+    <h1 style="">Meet Our Team</h1>
   <div class="column">
     <div class="card">
       <img src="https://i.pinimg.com/originals/e5/71/4a/e5714a28c71efc5235c89db3cb2fa801.jpg">
