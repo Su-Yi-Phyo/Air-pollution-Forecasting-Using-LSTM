@@ -117,7 +117,7 @@ elif selected == "Contact":
         <h2>Nyein Thiha Zaw</h2>
         <p class="title">Team Leader</p>
         <a href='https://ide.geeksforgeeks.org/'>
-        <button class="GFG">
+        <button class="GFG" style="border-radius: 8px;">
             Click Here
         </button>
         </a>
