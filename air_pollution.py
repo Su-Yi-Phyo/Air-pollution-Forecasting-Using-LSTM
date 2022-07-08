@@ -105,15 +105,18 @@ elif selected == "Test":
 elif selected == "Contact":
   st.markdown("""
     <div class="row">
-    <h1 style="">Meet Our Team</h1>
+    <h1 style="color: #0F2080">Meet Our Team</h1>
   <div class="column">
     <div class="card">
-      <img src="https://i.pinimg.com/originals/e5/71/4a/e5714a28c71efc5235c89db3cb2fa801.jpg">
+      <img src="SYP.jpg">
       <div class="container">
         <h2>Nyein Thiha Zaw</h2>
         <p class="title">Team Leader</p>
+        <ul>
+          <li>Graduated </li>
+        </ul>
         <a href='https://ide.geeksforgeeks.org/'>
-        <button class="hover-item" style="border-radius: 8px; background-color: #85C0F9; color: white;">
+        <button class="hover-item" style="border-radius: 8px; border: none; width: 50%; background-color: #85C0F9; color: white;">
             Contact
         </button>
         </a>
@@ -121,6 +124,41 @@ elif selected == "Contact":
     </div>
   </div>
 
+  <div class="column">
+    <div class="card">
+      <img src="SYP.jpg">
+      <div class="container">
+        <h2>Su Yi Phyo</h2>
+        <p class="title">Team Member</p>
+        <ul>
+          <li>Graduated </li>
+        </ul>
+        <a href='ms.suyiphyo5@gmail.com'>
+        <button class="hover-item" style="border-radius: 8px; border: none; width: 50%; background-color: #85C0F9; color: white;">
+            Contact
+        </button>
+        </a>
+      </div>
+    </div>
+  </div>
 
+  <div class="column">
+    <div class="card">
+      <img src="SYP.jpg">
+      <div class="container">
+        <h2>Si Thu Aung</h2>
+        <p class="title">Team Member</p>
+        <ul>
+          <li>Graduated </li>
+        </ul>
+        <a href='https://ide.geeksforgeeks.org/'>
+        <button class="hover-item" style="border-radius: 8px; border: none; width: 50%; background-color: #85C0F9; color: white;">
+            Contact
+        </button>
+        </a>
+      </div>
+    </div>
+  </div>
   </div>
   """, unsafe_allow_html=True)
+ 
