@@ -109,23 +109,24 @@ elif selected == "Contact":
   st.markdown("""
      <h1 style="color: #0F2080; text-align: center;"> Meet Our Team </h1>
   """,unsafe_allow_html = True)
+
   st.image("Nyein Thiha Zaw.jpg")
   st.markdown("""
-     <div class="container">
+     <div class="container", >
         <h2>Nyein Thiha Zaw</h2>
         <p class="title">Team Leader</p>
         <ul>
           <li>Graduated </li>
         </ul>
         <a href='nyeinthihazaw219198@gmail.com'>
-        <button class="hover-item" style="border-radius: 8px; border: none; width: 20%; background-color: #85C0F9; color: white;">
+        <button class="hover-item" style="border-radius: 8px; border: none; width: 10%; background-color: #85C0F9; color: white;">
             Contact
         </button>
         </a>
   """, unsafe_allow_html = True)
 
   st.write()
-  st.image("SYP.jpg", width = 500px)
+  st.image("SYP.jpg", width = 500)
   st.markdown("""
      <div class="container">
         <h2>Su Yi Phyo</h2>
@@ -134,7 +135,7 @@ elif selected == "Contact":
           <li>Graduated </li>
         </ul>
         <a href='ms.suyiphyo5@gmail.com'>
-        <button class="hover-item" style="border-radius: 8px; border: none; width: 20%; background-color: #85C0F9; color: white;">
+        <button class="hover-item" style="border-radius: 8px; border: none; width: 10%; background-color: #85C0F9; color: white;">
             Contact
         </button>
         </a>
@@ -150,7 +151,7 @@ elif selected == "Contact":
           <li>Graduated </li>
         </ul>
         <a href='iceacemountain@gmail.com'>
-        <button class="hover-item" style="border-radius: 8px; border: none; width: 20%; background-color: #85C0F9; color: white;">
+        <button class="hover-item" style="border-radius: 8px; border: none; width: 10%; background-color: #85C0F9; color: white;">
             Contact
         </button>
         </a>
@@ -166,7 +167,7 @@ elif selected == "Contact":
           <li>Graduated </li>
         </ul>
         <a href='hsueieinu@gmail.com '>
-        <button class="hover-item" style="border-radius: 8px; border: none; width: 20%; background-color: #85C0F9; color: white;">
+        <button class="hover-item" style="border-radius: 8px; border: none; width: 10%; background-color: #85C0F9; color: white;">
             Contact
         </button>
         </a>
