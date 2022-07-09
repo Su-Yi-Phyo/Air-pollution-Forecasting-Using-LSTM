@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import altair as alt
-import streamlit.components.v1.html
 
 from matplotlib import pyplot as plt
 from keras.models import load_model
@@ -107,54 +105,69 @@ elif selected == "Test":
 #           st.bokeh_chart(p, use_container_width=True)
 
 elif selected == "Contact":
-     st.components.v1.html("""
-          <section class="team text-center py-5">
-             <div class="container">
-               <div class="header my-5">
-                 <h1>Meet our Team </h1>
-                 <p class="text-muted">Meet and Greet our Team Members</p>
-               </div>
-               <div class="row">
-                 <div class="col-md-6 col-lg-3">
-                   <div class="img-block mb-5">
-                     <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
-                     <div class="content mt-2">
-                       <h4>Zain Knob</h4>
-                       <p class="text-muted">Mechanical Engineer</p>
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col-md-6 col-lg-3 ">
-                   <div class="img-block mb-5">
-                     <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t2.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
-                     <div class="content mt-2">
-                       <h4>Syndia Lee</h4>
-                       <p class="text-muted">Software Engineer</p>
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col-md-6 col-lg-3">
-                   <div class="img-block mb-5">
-                     <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t1.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
-                     <div class="content mt-2">
-                       <h4>Noel Flantier</h4>
-                       <p class="text-muted">Joomla Specialist</p>
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col-md-6 col-lg-3">
-                   <div class="img-block mb-5">
-                     <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t3.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
-                     <div class="content mt-2">
-                       <h4>Bobby Doe</h4>
-                       <p class="text-muted">Street Artist</p>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </section>
- 
- 
- <!-- credits: https://bootstrapcrew.com/snippets/team-members/ -->
-     """)
+     st.markdown("""
+     <h1 style="color: #0F2080; text-align: center;"> Meet Our Team </h1>
+  """,unsafe_allow_html = True)
+
+  st.image("Nyein Thiha Zaw.jpg")
+  st.markdown("""
+     <div class="container", >
+        <h2>Nyein Thiha Zaw</h2>
+        <p class="title">Team Leader</p>
+        <ul>
+          <li>Graduated </li>
+        </ul>
+        <a href='nyeinthihazaw219198@gmail.com'>
+        <button class="hover-item" style="border-radius: 8px; border: none; width: 10%; background-color: #85C0F9; color: white;">
+            Contact
+        </button>
+        </a>
+  """, unsafe_allow_html = True)
+  st.markdown("""""", unsafe_allow_html = True)
+
+  st.image("SYP.jpg", width = 500)
+  st.markdown("""
+     <div class="container">
+        <h2>Su Yi Phyo</h2>
+        <p class="title">Team Member</p>
+        <ul>
+          <li>Graduated </li>
+        </ul>
+        <a href='https://github.com/Su-Yi-Phyo'>
+        <button class="hover-item" style="border-radius: 8px; border: none; width: 10%; background-color: #85C0F9; color: white;">
+            Contact
+        </button>
+        </a>
+  """, unsafe_allow_html = True)
+  st.markdown("""""", unsafe_allow_html = True)
+
+  st.image("Nyein Thiha Zaw.jpg")
+  st.markdown("""
+     <div class="container">
+        <h2>Si Thu Aung</h2>
+        <p class="title">Team Member</p>
+        <ul>
+          <li>Graduated </li>
+        </ul>
+        <a href='iceacemountain@gmail.com'>
+        <button class="hover-item" style="border-radius: 8px; border: none; width: 10%; background-color: #85C0F9; color: white;">
+            Contact
+        </button>
+        </a>
+  """, unsafe_allow_html = True)
+  st.markdown("""""", unsafe_allow_html = True)
+
+  st.image("Nyein Thiha Zaw.jpg")
+  st.markdown("""
+     <div class="container">
+        <h2>Hsu Ei</h2>
+        <p class="title">Team Member</p>
+        <ul>
+          <li>Graduated </li>
+        </ul>
+        <a href='hsueieinu@gmail.com '>
+        <button class="hover-item" style="border-radius: 8px; border: none; width: 10%; background-color: #85C0F9; color: white;">
+            Contact
+        </button>
+        </a>
+  """, unsafe_allow_html = True)
