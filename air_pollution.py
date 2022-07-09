@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import pics
 
 from matplotlib import pyplot as plt
 from keras.models import load_model
@@ -34,10 +35,10 @@ if selected == "Home":
       <p style="text-align:justify;">With the advance of technology, it is increasingly exhaust emissions that have caused air pollution. In particular, PM2.5 (Particulate Matter) has been proven that it has a great correlation with human health. Therefore, the detection and prediction of PM 2.5 air pollution is an important issue. Countries around the world have built a variety of sensing devices for monitoring PM2.5 concentrations. There were also many studies constructed to predict and forecast various air pollution. Therefore, how to accurately forecast PM2.5 has become an important issue in recent years.In this project, we propose an approach to forecast PM2.5 concentration using RNN (Recurrent Neural Network) with LSTM (Long Short-Term Memory).</p>
       <p style="text-align: justify;">The training data used in the network is retrieved from Kaggle which is a dataset that reports on the weather and the level of pollution each hour for five years at the US embassy in Beijing, China for the years 2010 to 2014.The data includes the date-time, the pollution called PM2.5 concentration, and the weather information including dew point, temperature, pressure, wind direction, wind speed and the cumulative number of hours of snow and rain.</p>
     """,unsafe_allow_html = True)
-    st.image('Data Understanding .png',caption='Data Understanding')
-    st.image('Model loss History .png',caption='Model loss History')
-    st.image('Accuracy.png',caption='Accuracy')
-    st.image('RMSE_MAE.png')
+    st.image('/Pics/Data Understanding .png',caption='Data Understanding')
+    st.image('/Pics/Model loss History .png',caption='Model loss History')
+    st.image('/Pics/Accuracy.png',caption='Accuracy')
+    st.image('/Pics/RMSE_MAE.png')
     
 elif selected == "Test":
       with st.container():
@@ -109,7 +110,7 @@ elif selected == "Contact":
      <h1 style="color: #0F2080; text-align: center;"> Meet Our Team </h1>
   """,unsafe_allow_html = True)
 
-  st.image("Nyein Thiha Zaw.jpg")
+  st.image("/Pics/Nyein Thiha Zaw.jpg")
   st.markdown("""
      <div class="container", >
         <h2>Nyein Thiha Zaw</h2>
@@ -122,7 +123,7 @@ elif selected == "Contact":
   """, unsafe_allow_html = True)
   st.markdown("""""", unsafe_allow_html = True)
 
-  st.image("syp.jpg")
+  st.image("/Pics/syp.jpg")
   st.markdown("""
      <div class="container">
         <h2>Su Yi Phyo</h2>
@@ -135,7 +136,7 @@ elif selected == "Contact":
   """, unsafe_allow_html = True)
   st.markdown("""""", unsafe_allow_html = True)
 
-  st.image("Nyein Thiha Zaw.jpg")
+  st.image("/Pics/Nyein Thiha Zaw.jpg")
   st.markdown("""
      <div class="container">
         <h2>Si Thu Aung</h2>
@@ -148,7 +149,7 @@ elif selected == "Contact":
   """, unsafe_allow_html = True)
   st.markdown("""""", unsafe_allow_html = True)
 
-  st.image("Nyein Thiha Zaw.jpg")
+  st.image("/Pics/Nyein Thiha Zaw.jpg")
   st.markdown("""
      <div class="container">
         <h2>Hsu Ei</h2>
