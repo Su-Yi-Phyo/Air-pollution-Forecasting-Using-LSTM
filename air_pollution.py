@@ -114,9 +114,6 @@ elif selected == "Contact":
      <div class="container", >
         <h2>Nyein Thiha Zaw</h2>
         <p class="title">Team Leader</p>
-        <ul>
-          <li>Graduated </li>
-        </ul>
         <a href='nyeinthihazaw219198@gmail.com'>
         <button class="hover-item" style="border-radius: 8px; border: none; width: 10%; background-color: #85C0F9; color: white;">
             Contact
@@ -143,9 +140,6 @@ elif selected == "Contact":
      <div class="container">
         <h2>Si Thu Aung</h2>
         <p class="title">Team Member</p>
-        <ul>
-          <li>Graduated </li>
-        </ul>
         <a href='iceacemountain@gmail.com'>
         <button class="hover-item" style="border-radius: 8px; border: none; width: 10%; background-color: #85C0F9; color: white;">
             Contact
@@ -159,9 +153,6 @@ elif selected == "Contact":
      <div class="container">
         <h2>Hsu Ei</h2>
         <p class="title">Team Member</p>
-        <ul>
-          <li>Graduated </li>
-        </ul>
         <a href='hsueieinu@gmail.com '>
         <button class="hover-item" style="border-radius: 8px; border: none; width: 10%; background-color: #85C0F9; color: white;">
             Contact
