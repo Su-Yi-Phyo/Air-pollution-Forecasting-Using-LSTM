@@ -9,7 +9,7 @@ from streamlit_option_menu import option_menu
 
 st.set_page_config(
      page_title="Air Pollution Forecasting App",
-     page_icon="https://icons8.com/icons/set/pollution",
+     page_icon="https://github.com/Su-Yi-Phyo/Air-pollution-Forecasting-Using-LSTM/blob/main/icons8-pollution-16.png",
      layout="wide")
 
 model = load_model('AirPollutionModel.h5')
