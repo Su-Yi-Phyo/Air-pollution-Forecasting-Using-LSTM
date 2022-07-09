@@ -105,7 +105,7 @@ elif selected == "Test":
 #           st.bokeh_chart(p, use_container_width=True)
 
 elif selected == "Contact":
-     st.markdown("""
+  st.markdown("""
      <h1 style="color: #0F2080; text-align: center;"> Meet Our Team </h1>
   """,unsafe_allow_html = True)
 
@@ -130,9 +130,6 @@ elif selected == "Contact":
      <div class="container">
         <h2>Su Yi Phyo</h2>
         <p class="title">Team Member</p>
-        <ul>
-          <li>Graduated </li>
-        </ul>
         <a href='https://github.com/Su-Yi-Phyo'>
         <button class="hover-item" style="border-radius: 8px; border: none; width: 10%; background-color: #85C0F9; color: white;">
             Contact
