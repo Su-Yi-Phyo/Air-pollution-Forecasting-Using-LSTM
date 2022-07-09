@@ -104,8 +104,6 @@ elif selected == "Test":
 #           p.line(x, y, legend_label='Trend', line_width=2)
 
 #           st.bokeh_chart(p, use_container_width=True)
-          else:
-               st.write("Please upload your file.")
 
 elif selected == "Contact":
   st.markdown("""
