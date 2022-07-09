@@ -138,7 +138,7 @@ elif selected == "Contact":
   """, unsafe_allow_html = True)
   st.markdown("""""", unsafe_allow_html = True)
 
-  st.image("Nyein Thiha Zaw.jpg")
+  st.image("Si Thu Aung.jpg")
   st.markdown("""
      <div class="container">
         <h2>Si Thu Aung</h2>
@@ -151,7 +151,7 @@ elif selected == "Contact":
   """, unsafe_allow_html = True)
   st.markdown("""""", unsafe_allow_html = True)
 
-  st.image("Nyein Thiha Zaw.jpg")
+  st.image("hsuei.jpg")
   st.markdown("""
      <div class="container">
         <h2>Hsu Ei</h2>
