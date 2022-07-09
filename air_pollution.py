@@ -122,7 +122,7 @@ elif selected == "Contact":
   """, unsafe_allow_html = True)
   st.markdown("""""", unsafe_allow_html = True)
 
-  st.image("SYP.jpg")
+  st.image("syp.jpg")
   st.markdown("""
      <div class="container">
         <h2>Su Yi Phyo</h2>
