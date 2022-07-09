@@ -9,7 +9,7 @@ from streamlit_option_menu import option_menu
 
 st.set_page_config(
      page_title="Air Pollution Forecasting App",
-     page_icon="https://github.com/Su-Yi-Phyo/Air-pollution-Forecasting-Using-LSTM/blob/main/pollution.png",
+     page_icon="https://icons8.com/icons/set/pollution",
      layout="wide")
 
 model = load_model('AirPollutionModel.h5')
@@ -25,7 +25,7 @@ with st.sidebar:
         "nav-link-selected": {"background-color": "#85C0F9"},
     }
 )
-
+   
 if selected == "Home":
   with st.container():
     st.title('Air Pollution Forecasting')
