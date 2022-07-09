@@ -87,7 +87,9 @@ elif selected == "Test":
 
           #graph output
 #           chart_data = pd.DataFrame(result,colums=['Air Pollution Prediction'])
-          st.write("Pollution Rate in ppm:")
+          st.markdown("""
+               <p style="color:#0F2080">Air Pollution Rate in ppm:</p>
+          """, unsafe_allow_html=True)
           st.line_chart(result)
 #           from bokeh.plotting import figure
 
