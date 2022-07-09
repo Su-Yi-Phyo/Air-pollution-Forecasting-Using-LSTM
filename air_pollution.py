@@ -36,7 +36,7 @@ if selected == "Home":
     """,unsafe_allow_html = True)
     st.image('Data Understanding .png',caption='Data Understanding')
     st.image('Model loss History .png',caption='Model loss History')
-    st.image('Accuracy.png',caption='Accuracy')
+    st.image('Data.png',caption='Accuracy')
     st.image('RMSE_MAE.png')
     
 elif selected == "Test":
