@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import altair as alt
-import streamlit.components.v1 as components
+import streamlit.components.v1.html
 
 from matplotlib import pyplot as plt
 from keras.models import load_model
@@ -107,7 +107,7 @@ elif selected == "Test":
 #           st.bokeh_chart(p, use_container_width=True)
 
 elif selected == "Contact":
-     components.html("""
+     st.components.v1.html("""
           <section class="team text-center py-5">
              <div class="container">
                <div class="header my-5">
