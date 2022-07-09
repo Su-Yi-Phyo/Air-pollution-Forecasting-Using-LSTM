@@ -114,7 +114,7 @@ elif selected == "Contact":
      <div class="container", >
         <h2>Nyein Thiha Zaw</h2>
         <p class="title">Team Leader</p>
-        <a href='nyeinthihazaw219198@gmail.com'>
+        <a href='https://github.com/nyeinthihazaw'>
         <button class="hover-item" style="border-radius: 8px; border: none; width: 10%; background-color: #85C0F9; color: white;">
             Contact
         </button>
@@ -140,7 +140,7 @@ elif selected == "Contact":
      <div class="container">
         <h2>Si Thu Aung</h2>
         <p class="title">Team Member</p>
-        <a href='iceacemountain@gmail.com'>
+        <a href='https://github.com/sithuaung4c'>
         <button class="hover-item" style="border-radius: 8px; border: none; width: 10%; background-color: #85C0F9; color: white;">
             Contact
         </button>
