@@ -87,6 +87,7 @@ elif selected == "Test":
 
           #graph output
 #           chart_data = pd.DataFrame(result,colums=['Air Pollution Prediction'])
+          st.write("Pollution Rate in ppm:")
           st.line_chart(result)
 #           from bokeh.plotting import figure
 
@@ -103,6 +104,8 @@ elif selected == "Test":
 #           p.line(x, y, legend_label='Trend', line_width=2)
 
 #           st.bokeh_chart(p, use_container_width=True)
+          else:
+               st.write("Please upload your file.")
 
 elif selected == "Contact":
   st.markdown("""
