@@ -37,7 +37,7 @@ if selected == "Home":
     st.image('Data Understanding .png',caption='Data Understanding')
     st.image('Model loss History .png',caption='Model loss History')
     st.image('Data.png',caption='Accuracy')
-    st.image('RMSE_MAE.png')
+    st.image('rmse-mae.png')
     
 elif selected == "Test":
       with st.container():
